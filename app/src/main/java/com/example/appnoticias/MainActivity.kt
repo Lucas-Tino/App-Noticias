@@ -47,19 +47,20 @@ fun App() {
     Column (
         Modifier
             .fillMaxWidth()
-            .background(Color.Gray)
+            .background(Color.LightGray)
             .verticalScroll(state = ScrollState(initial = 0))
     ) {
         Row (
             Modifier
                 .fillMaxWidth()
-                .background(Color.White),
+                .background(MaterialTheme.colorScheme.primary),
             Arrangement.Center
         ) {
             Text(
                 text = "App Notícias",
                 fontFamily = FontFamily.SansSerif,
-                fontSize = 30.sp
+                fontSize = 30.sp,
+                color = Color.White
             )
         }
 
@@ -76,19 +77,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "Lorem Ipsum",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique...",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -116,19 +121,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "Enchentes no Rio Grande do Sul",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "Situação das enchentes no Rio Grande do Sul piora; resgates estão sendo preparados.",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -156,19 +165,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "Primeira imagem de 'Superman' divulgada",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "O diretor divulgou a primeira imagem do herói e seu novo traje para o filme, que chegará aos cinemas em 2025.",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -196,19 +209,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "São Paulo ganha do CD Cobresal por 3 a 1",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "São Paulo ganhou do CD Cobresal com placar de 3 a 1 e garante vaga nas oitavas da Copa Libertadores.",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -236,19 +253,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "Prazo de inscrição para o Vestibulinho prorrogado",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "Etecs prorrogam prazo de inscrição do Vestibulinho 2024/2 para o dia 17 de maio.",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -276,19 +297,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "Saqueadores atacam lojas no Rio Grande do Sul",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "Em meio a inundações, saqueadores roubam lojas e atacam barcos.",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -316,19 +341,23 @@ fun App() {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White)
+                    .background(MaterialTheme.colorScheme.primary)
             ) {
-                Text(text = "Título")
+                Text(
+                    text = "Sepultura anuncia novas datas de turnê de despedida no Brasil",
+                    color = Color.Black
+                )
             }
-
             Row(
                 Modifier
                     .fillMaxWidth()
                     .background(Color.White)
             ) {
-                Text(text = "Descrição da Notícia")
+                Text(
+                    text = "A banda se apresentará no Ceará, no Pará, Brasília, Paraíba, Mato Grosso do Sul e interior de São Paulo nos próximos meses.",
+                    color = Color.Black
+                )
             }
-
             Row (
                 Modifier
                     .fillMaxWidth()
@@ -342,6 +371,13 @@ fun App() {
                 }
             }
         }
+
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+        ){ }
+
     }
 }
 
